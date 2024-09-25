@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soy CPS</title>
+    <style>
+        body {
+            background-color: #121212; /* Color de fondo oscuro */
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .title-container {
+            background-image: url('https://i.ibb.co/WWZfW4D/CLASE-MUESTRA-5.png'); /* Nueva imagen de fondo */
+            background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 40vh; /* Altura del contenedor del título */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 4vw; /* Ajuste de tamaño de fuente */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        .bottom-container {
+            display: flex;
+            justify-content: space-around; /* Distribuye los elementos */
+            align-items: center;
+            height: 60vh; /* Altura del contenedor inferior */
+            padding: 20px;
+        }
+
+        .image-container {
+            max-width: 300px; /* Ancho máximo */
+            max-height: 300px; /* Alto máximo */
+            width: 100%; /* Ancho responsivo */
+            height: auto; /* Alto automático para mantener proporción */
+        }
+
+        .image-container img {
+            width: 100%; /* Asegura que la imagen llene el contenedor */
+            height: auto; /* Mantiene la proporción de la imagen */
+            border-radius: 10px; /* Bordes redondeados */
+        }
+
+        .message-container {
+            background-color: rgba(255, 255, 255, 0.2); /* Fondo translúcido */
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            flex: 1; /* Ocupa el espacio restante */
+            margin-left: 20px; /* Espacio entre imagen y mensaje */
+        }
+
+        .message {
+            font-size: 1.2em; /* Tamaño de fuente del mensaje */
+            line-height: 1.5; /* Espaciado entre líneas */
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            .title {
+                font-size: 6vw; /* Ajuste del tamaño de fuente para pantallas pequeñas */
+            }
+
+            .bottom-container {
+                flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+                align-items: center; /* Centra los elementos */
+            }
+
+            .message-container {
+                margin-left: 0; /* Quita margen en pantallas pequeñas */
+                margin-top: 20px; /* Espacio superior entre imagen y mensaje */
+                width: 80%; /* Ajuste de ancho para el contenedor de mensaje */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .image-container {
+                max-width: 80%; /* Aumenta el ancho máximo para móviles */
+            }
+
+            .message {
+                font-size: 1em; /* Tamaño de fuente más pequeño para móviles */
+            }
+
+            .title-container {
+                height: 30vh; /* Ajusta la altura del contenedor en móviles */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="title-container">
+        <h1 class="title">"Tú eres CPS"</h1>
+    </div>
+
+    <div class="bottom-container">
+        <div class="image-container">
+            <img src="https://i.ibb.co/zSprg1B/Leonardo-Phoenix-A-highcontrast-cinematic-photograph-featuring-3.jpg" alt="Imagen Inspiradora">
+        </div>
+        <div class="message-container">
+            <p class="message">
+                "¡Tú eres CPS! Al aprender inglés, te estás abriendo las puertas a un futuro brillante. 
+                Imagina un mundo lleno de oportunidades donde tus sueños se vuelven realidad. 
+                Al unirte a nuestra comunidad, no solo adquieres un nuevo idioma, sino que te conviertes en parte de un movimiento 
+                hacia el éxito y el crecimiento personal. 
+                Juntos, forjaremos un camino lleno de posibilidades. ¡Tu viaje comienza hoy!"
+            </p>
+        </div>
+    </div>
+</body>
+</html>
